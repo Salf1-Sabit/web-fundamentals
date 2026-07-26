@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Pineapple's Pizzeria</title>
+</head>
+<body>
+    <!-- Landmark: main -->
+    <main>
+        <!-- Landmark: banner -->
+        <header role="banner">
+            <a class="logo" href="/">
+                <span class="visually-hidden">Mr. Pineabpple's Pizza</span>
+            </a>
+
+            <!-- Landmark: navigation -->
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a aria-current="page" href="/">Home</a></li>
+                    <li><a href="/menu">Our Pizzas</a></li>
+                    <li><a href="/contact">Get in touch</a></li>
+                </ul>
+            </nav>
+
+            <!-- Landmark: search -->
+            <form name="site-search" method="get" action="/" role="search">
+                <label for="query">Find you perfect pizza</label>
+                <input id="query" type="search" name="query">
+            </form>
+        </header>
+
+        <!-- Landmark: region -->
+        <section aria-labelledby="our-pizzas-heading">
+            <h2 id="our-pizzas-heading">Our pizzas</h2>
+            <ul>
+                <li>Margherita with Pineapple</li>
+                <li>Veggie with Pineapple</li>
+                <li>Meaty with Pineapple</li>
+            </ul>
+        </section>
+
+        <!-- Landmark: complementary -->
+        <aside aria-labelledby="pizza-recipe-heading">
+            <h3 id="pizza-recipe-heading">Make your own pie!</h3>
+            <p>Below is a list of our favorite pizza recipes.</p>
+            <ul>
+                <li><a href="/mushroom-pizza">The shroom</a></li>
+                <li><a href="/smokey-joe">Smokey Joe</a></li>
+                <li><a href="/fromage">Fromage</a></li>
+            </ul>
+        </aside>
+
+        <!-- Landmark: Form -->
+        <div class="newsletter">
+            <h3 id="newsletter-subscribe-form-heading">Subsribe to Mr. Pineapple's newsletter</h3>
+            <p>In our nesletter, you can expect even more wonderful pizza recipes, all featuring the versatile pineapple.</p>
+            <form name="newsletter" action="/subscribe" type="post" aria-labelledby="newsletter-subscribe-form-heading">
+                <label for="email">Please provie your email address</label>
+                <input id="email" type="email" name="email">
+
+                <button type="submit">Pineapple me 🍍</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Landmark: contentinfo -->
+    <footer>
+        <p>Copyright &copy; Mr. Pineapple's Pizzeria - 2026</p>
+    </footer>
+</body>
+</html>
